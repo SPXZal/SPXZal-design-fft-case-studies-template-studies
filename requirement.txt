@@ -1,0 +1,11 @@
+# Scientific Computing and Data Manipulation
+numpy>=1.24.0
+scipy>=1.10.0
+pandas>=2.0.0
+
+# Data Visualization
+matplotlib>=3.7.0
+
+# Computational Environment and Deployment
+jupyter>=1.0.0
+nbconvert>=7.0.0
