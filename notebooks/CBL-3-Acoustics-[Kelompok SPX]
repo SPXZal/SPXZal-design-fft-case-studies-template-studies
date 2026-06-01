@@ -1,3 +1,27 @@
-tes
-jhhggkuhl
-jkkkhohiuguyufufuytydytdydytdyt
+#**BAB 1**
+#**Pendahuluan**
+##**1.1 Latar Belakang**
+Perkembangan teknologi digital telah mendorong pemanfaatan pengolahan sinyal dalam berbagai bidang ilmu pengetahuan dan teknologi. Salah satu bentuk sinyal yang banyak digunakan adalah sinyal akustik atau sinyal audio. Sinyal akustik merupakan representasi gelombang suara yang direkam dan disimpan dalam bentuk data digital sehingga dapat dianalisis menggunakan metode komputasi. Pemrosesan sinyal audio banyak diterapkan pada sistem komunikasi, pengenalan suara, multimedia, instrumentasi, hingga sistem monitoring yang memanfaatkan informasi suara sebagai sumber data utama. Pemanfaatan teknologi digital pada sinyal audio memungkinkan proses analisis dilakukan secara lebih cepat, akurat, dan efisien dibandingkan metode konvensional (Supardi et al., 2022).
+
+Dalam proses akuisisi data, sinyal audio yang diperoleh dari mikrofon atau perangkat perekam umumnya tidak hanya mengandung informasi utama yang diinginkan, tetapi juga mengandung gangguan berupa noise. Noise merupakan sinyal yang tidak diinginkan dan dapat berasal dari lingkungan sekitar, gangguan elektronik pada perangkat, maupun proses transmisi data. Keberadaan noise menyebabkan kualitas sinyal menurun sehingga informasi yang terkandung di dalamnya menjadi lebih sulit untuk dianalisis. Oleh karena itu, diperlukan suatu metode yang mampu memisahkan komponen sinyal utama dari komponen noise agar kualitas data yang diperoleh dapat ditingkatkan (Putri et al., 2025).
+
+Salah satu pendekatan yang banyak digunakan dalam pengolahan sinyal digital adalah analisis frekuensi menggunakan Transformasi Fourier. Transformasi Fourier memungkinkan sinyal yang semula direpresentasikan dalam domain waktu diubah menjadi domain frekuensi sehingga frekuensi-frekuensi penyusun sinyal dapat diamati secara lebih jelas. Dalam implementasi komputasi modern, proses transformasi ini umumnya dilakukan menggunakan algoritma Fast Fourier Transform (FFT). FFT merupakan pengembangan dari Discrete Fourier Transform (DFT) yang mampu melakukan perhitungan spektrum frekuensi secara lebih cepat dan efisien sehingga sangat sesuai digunakan untuk analisis sinyal digital dalam jumlah besar. Penggunaan FFT memungkinkan identifikasi frekuensi dominan pada sinyal audio serta memudahkan proses analisis karakteristik frekuensi yang terkandung di dalamnya (Supardi et al., 2022).
+
+Setelah spektrum frekuensi diperoleh, proses pengurangan noise dapat dilakukan melalui teknik filtering. Salah satu metode filtering yang umum digunakan adalah low-pass filter. Low-pass filter bekerja dengan mempertahankan komponen frekuensi rendah yang mengandung informasi utama sinyal dan meredam komponen frekuensi tinggi yang sering kali diasosiasikan sebagai noise. Melalui proses ini, kualitas sinyal dapat ditingkatkan tanpa mengubah karakteristik utama sinyal secara signifikan. Penelitian yang dilakukan oleh Putri et al. (2025) menunjukkan bahwa penerapan low-pass filter efektif dalam mereduksi noise pada sinyal audio dan mampu meningkatkan kualitas hasil pemrosesan sinyal berdasarkan analisis respon frekuensi dan kualitas audio yang dihasilkan.
+
+Berdasarkan latar belakang tersebut, pada studi kasus ini dilakukan analisis sinyal akustik yang telah terkontaminasi noise menggunakan metode Fast Fourier Transform (FFT). Sinyal terlebih dahulu dianalisis pada domain frekuensi untuk mengidentifikasi komponen frekuensi dominan dan komponen noise. Selanjutnya diterapkan low-pass filter untuk menghilangkan frekuensi yang tidak diinginkan, kemudian sinyal direkonstruksi kembali ke domain waktu menggunakan Inverse Fast Fourier Transform (IFFT). Melalui tahapan tersebut diharapkan dapat dipahami bagaimana metode FFT dan filtering frekuensi dapat digunakan untuk meningkatkan kualitas sinyal akustik yang mengalami gangguan noise.
+
+##**1.2 Rumusan Masalah**
+Berdasarkan latar belakang yang telah diuraikan, rumusan masalah dalam studi kasus ini adalah sebagai berikut:
+
+1.   Bagaimana FFT digunakan untuk menganalisis sinyal akustik yang mengandung noise?
+
+2.   Bagaimana low-pass filter digunakan untuk mengurangi noise pada sinyal akustik?
+3.   Bagaimana efektivitas kombinasi FFT, low-pass filter, dan IFFT dalam meningkatkan kualitas sinyal?
+
+##**1.3 Tujuan Praktikum**
+Berdasarkan rumusan masalah yang telah disusun, tujuan dari studi kasus ini adalah:
+
+1.   Menganalisis karakteristik frekuensi sinyal akustik yang terkontaminasi noise menggunakan Fast Fourier Transform (FFT).
+2.   Menerapkan low-pass filter untuk mengurangi komponen noise pada sinyal akustik.
+3.   Mengevaluasi kualitas sinyal hasil filtering melalui proses rekonstruksi menggunakan Inverse Fast Fourier Transform (IFFT).
